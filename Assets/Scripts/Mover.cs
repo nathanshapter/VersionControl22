@@ -15,18 +15,18 @@ public class Mover : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
-
     }
 
     private void Movement()
     {
         float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
         float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        transform.Translate(xValue, 0, zValue);
+        transform.Translate(xValue, 0, zValue);        
     }
 
     void PrintInstructions()
     {
         Debug.Log("hello");
     }
+    
 }
